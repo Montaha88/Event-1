@@ -60,10 +60,11 @@ nav .nav-bar .sidebarOpen{
   display: none;
 }
 nav .nav-bar .logo a{
- font-size: 25px;
+ font-size: 35px;
  text-decoration: none;
  font-weight: 500;
  color: var(--text-color);
+ margin-right: 200px;
 
 }
 nav .active.nav-bar .navlogo a{
@@ -90,7 +91,7 @@ nav .active.nav-bar .navlogo a{
     color: var(--text-color);
     padding: 10px;
     font-weight: 400;
-    top: 8px;
+    bottom: 5px;
 
   }
   .nav-links li a::before{
@@ -112,6 +113,7 @@ nav .active.nav-bar .navlogo a{
   .nav-bar .darkLight-searchBox{
     display: flex;
     align-items: center;
+    margin-left: 130px;
   }
   .darkLight-searchBox .dark-light,
   .darkLight-searchBox .searchToggle{
@@ -1137,3 +1139,100 @@ body.dark .search-field input{
   }
 }
 
+/*
+# Team
+-*/
+.team {
+  background: #fff;
+  padding: 60px 0;
+}
+
+.team .member {
+  overflow: hidden;
+  text-align: center;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  transition: 0.3s;
+}
+
+.team .member .member-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.team .member .member-img:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: no-repeat center bottom;
+  background-size: contain;
+  z-index: 1;
+}
+
+.team .member .social {
+  position: absolute;
+  right: -100%;
+  top: 30px;
+  opacity: 0;
+  border-radius: 4px;
+  transition: 0.5s;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 2;
+}
+
+.team .member .social a {
+  transition: color 0.3s;
+  color: rgba(1, 41, 112, 0.5);
+  margin: 15px 12px;
+  display: block;
+  line-height: 0;
+  text-align: center;
+}
+
+.team .member .social a:hover {
+  color: rgba(1, 41, 112, 0.8);
+}
+
+.team .member .social i {
+  font-size: 18px;
+}
+
+.team .member .member-info {
+  padding: 10px 15px 20px 15px;
+}
+
+.team .member .member-info h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #012970;
+}
+
+.team .member .member-info span {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #aaaaaa;
+}
+
+.team .member .member-info p {
+  font-style: italic;
+  font-size: 14px;
+  padding-top: 15px;
+  line-height: 26px;
+  color: #5e5e5e;
+}
+
+.team .member:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+}
+
+.team .member:hover .social {
+  right: 8px;
+  opacity: 1;
+}
