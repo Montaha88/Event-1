@@ -23,8 +23,8 @@ body{
 
 }
 body.dark{
-  --body-color:#f1f2f3;
-  --nav-color:#242526;
+  --body-color:#a5c8ea;
+  --nav-color:#384f4f;
   --side-nav:#242526;
   --text-color:#ccc;
   --search-bar:#242526;
